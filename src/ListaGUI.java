@@ -6,8 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ListaGUI {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
         Utilizable lista=new ListaPalabras();
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         JFrame frame=new JFrame();
         JPanel ventana=new JPanel();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
